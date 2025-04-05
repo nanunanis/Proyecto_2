@@ -42,6 +42,7 @@ jupyter notebook
 Desde Jupyter, navega hasta la carpeta notebooks y selecciona el archivo correspondiente.
 Estructura del Proyecto
 
+```
 Proyecto_2/
 │── notebooks/             # Directorio de notebooks
 │   ├── ejercicio10.ipynb  # Archivo principal del ejercicio
@@ -50,4 +51,4 @@ Proyecto_2/
 │   ├── funciones.py       # Archivo con las funciones principales
 │── requirements.txt       # Lista de dependencias del proyecto
 │── README.md              # Documentación e instrucciones
-Este proyecto permite analizar el rendimiento del equipo a lo largo de múltiples rondas, identificando el jugador más valioso en cada una. 
+Este proyecto permite analizar el rendimiento del equipo a lo largo de múltiples rondas, identificando el jugador más valioso en cada una.```
