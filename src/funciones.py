@@ -28,3 +28,22 @@ def find_mvp (points, best_points, player, mvp_player):
         best_points = points
         mvp_player = player
     return mvp_player, best_points
+
+
+# Ordeno el diccionario por ronda cargada
+def ordenar_ranking (players_data):
+    return sorted(players_data.items(), key = lambda x: x[1]['points'], reverse = True) 
+
+
+# Imprimo los ranking por ronda
+def print_ranking (ranking, i):
+    if(i<=5):
+        print(f"Ranking ronda {i}: ")
+    else:
+        print(f"Ranking Final: ")
+    print(f"{'Jugador':^10} {'Kills':^10} {'Asists':^10} {'Deaths':^10} {'MVPs':^10} {'Puntos':^10}")
+    print("-" * 65)
+    for player, stats in ranking:
+        print(f"{player:^10}{stats['kills']:^12}{stats['assists']:^10}{stats['deaths']:^11}{stats['MVPs']:^12}{stats['points']:^10}")
+    print('-' * 65)
+    print()
